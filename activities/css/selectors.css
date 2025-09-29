@@ -1,0 +1,30 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header h1 {
+    color: cadetblue;
+}
+
+#celestial{
+    color: blue;
+}
+#truth{
+    color:coral;
+}
+.diff {
+    font-size: italic;
+}
+
+.bigger {
+    font-size: 15pt;
+}
+
+.crisom {
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.special {
+    font-weight: 800;
+}
