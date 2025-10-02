@@ -1,6 +1,8 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f3e9;
+    color: #222;
+    font-size: 18px;
 }
 
 header h1 {
@@ -9,29 +11,28 @@ header h1 {
 }
 
 h3 {
-    color : red !important;
+    color: red;
     font-size: 16pt;
 }
 
-#important{
-    color:coral;
+#important {
+    color: coral;
     font-weight: 800;
     font-size: 20pt;
 }
 
-
 .bigger {
     font-weight: 550;
-    font-style :italic;
-
+    font-style: italic;
 }
 
 .smaller {
-    font-style :italic;
-    font-size : 5;
+    font-style: italic;
+    font-size: 14px;
+    color: gray;
 }
 
 .highlight {
-    color : red !important;
+    color: red;
+    font-weight: bold;
 }
-
