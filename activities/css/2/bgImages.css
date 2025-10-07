@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    background: url(texture.jpg) darkcyan;
+    
+}
+header {
+    background: url(lighting.png) no-repeat right;
+    background-image: url(lighting.png);
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.other {
+    background-image: url(texture.jpg);
+    background-color: darkcyan;
+}
+.list1 {
+    list-style-image: url(lighting.png)
+
+}
+.list2 {
+    list-style-image: url(dot.png);
+
+}
+
+.list3 {
+    list-style-image: url(texture.jpg);
+
+}
