@@ -1,0 +1,25 @@
+.current {
+    color: orange;
+}
+
+.navlink{
+    color:blue;
+}
+
+.coconut{
+    list-style-image: url("images/coconut.png");
+}
+
+body {
+    background-image: url("images/bg.png");
+    background-repeat: repeat;
+    background-position: top;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.bgImage {
+    background-image: url("images/oahu.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
