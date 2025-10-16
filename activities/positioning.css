@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin-top: 400px;  move content below our navigation */
+}
+
+nav a {
+    display: inline-block;
+    padding: 40px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.temple {
+    border:thin solid black;
+    width: 200px;
+    
+}
+
+.temple img{
+    width: 100%;
+}
+
+.floater {
+    float: left;
+}
+
+.hammer {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    margin : 0;
+    z-index: -100;
+    display: none;
+}
+/*
+.hammer {
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+*/
+.stop {
+    clear : both;
+}
