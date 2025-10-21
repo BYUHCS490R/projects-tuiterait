@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-size-adjust: inherit;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: cadetblue;
+    color: azure;
+    width: 150px;
+    margin: 2px;
+    justify-content: center;
+}
+
+nav a:hover {
+    display: flex;
+
+    text-decoration: underline;
+
+}
+
+.card {
+    border: thin solid #000;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(25,25,25,0.5);
+    width : 25%;
+}
+
+main{
+
+}
+
+.row {
+    display : flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
