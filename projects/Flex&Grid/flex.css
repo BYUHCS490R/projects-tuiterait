@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: rgb(255, 72, 0);
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-size-adjust: inherit;
+    margin:0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(180, 5, 5);
+    justify-content: center;
+    width:100%;
+    
+
+}
+
+nav a{
+    display:block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ff0000;
+    justify-content: space-evenly;
+    padding : 10px 15px;
+    width: 100%;
+    flex-direction: row;
+
+}
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+/*main and side content*/
+
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cardBoss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.card {
+    border: thin solid #000;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(25,25,25,0.5);
+    width : 25%;
+}
+
+aside{
+    flex:1;
+    background-color: white;
+}
+main{
+    flex:3;
+    background-color:grey;
+}
+
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: black;
+    color:red;
+}
