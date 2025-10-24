@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+}
+header{
+    background-color: rgb(216, 196, 196);
+    color: rgb(55, 0, 255);
+    text-decoration-thickness: ;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: aqua;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: aqua;
+}
+
+.main-row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sidebar{
+    flex:1;
+    width: 200px;
+    background-color: grey;
+}
+
+.sidebar p{
+    text-align: center;
+}
+
+main{
+    flex:3;
+    text-align: center;
+    background-color: rgb(43, 174, 226);
+}
+
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 5px grey;
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(25,25,25,0.5);
+    justify-content: inherit;
+    
+}
+
+.card img {
+    width:100%;
+}
+
+.parent{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+}
