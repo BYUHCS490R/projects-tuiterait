@@ -1,0 +1,32 @@
+nav {
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+main{
+    flex:none;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+.card{
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
