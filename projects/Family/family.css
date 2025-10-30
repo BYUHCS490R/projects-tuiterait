@@ -1,0 +1,143 @@
+/* BASIC PAGE SETUP */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+
+/* HEADER */
+header {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* NAV BAR */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ddd;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #bbb;
+}
+
+/* MAIN LAYOUT */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 25%;
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+aside figure {
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+main {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* ARTICLES */
+article {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+article p {
+    font-size: 0.95em;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* RESPONSIVE: MOBILE VIEW */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* PRINT VIEW */
+@media print {
+    nav, footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    #wrapper {
+        box-shadow: none;
+        border: none;
+    }
+}
