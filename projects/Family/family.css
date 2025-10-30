@@ -1,21 +1,17 @@
-/* BASIC PAGE SETUP */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #000000;
 }
 
 #wrapper {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
-    background-color: white;
-    border: 2px solid #ccc;
+    background-color: rgb(0, 0, 0);
     border-radius: 8px;
-    box-shadow: 5px 5px 10px #aaa;
 }
 
-/* HEADER */
 header {
     background-color: #2e8b57;
     color: white;
@@ -23,27 +19,25 @@ header {
     padding: 15px;
 }
 
-/* NAV BAR */
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #ddd;
+    background-color: #35a314;
     flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px;
     display: block;
     font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #bbb;
+    background-color: #3fc513;
 }
 
-/* MAIN LAYOUT */
+
 #content {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +45,7 @@ nav a:hover {
 
 aside {
     width: 25%;
-    background-color: #f8f8f8;
+    background-color: #a5f3a0;
     padding: 15px;
     box-sizing: border-box;
 }
@@ -74,15 +68,12 @@ main {
     box-sizing: border-box;
 }
 
-/* ARTICLES */
 article {
     width: 30%;
-    background-color: #fafafa;
-    border: 1px solid #ddd;
+    background-color: #3ca81c;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 15px;
-    box-shadow: 3px 3px 5px lightgray;
 }
 
 article img {
@@ -94,16 +85,15 @@ article p {
     font-size: 0.95em;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
-    background-color: #2e8b57;
+    background-color: red;
     color: white;
     padding: 10px;
     border-radius: 0 0 8px 8px;
 }
 
-/* RESPONSIVE: MOBILE VIEW */
+
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
@@ -126,7 +116,6 @@ footer {
     }
 }
 
-/* PRINT VIEW */
 @media print {
     nav, footer {
         display: none;
