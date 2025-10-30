@@ -74,6 +74,7 @@ article {
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 15px;
+    margin: 1px;
 }
 
 article img {
@@ -86,7 +87,6 @@ article p {
 }
 
 footer {
-    text-align: center;
     background-color: red;
     color: white;
     padding: 10px;
@@ -111,8 +111,7 @@ footer {
     }
 
     article {
-        width: 90%;
-        margin: 10px auto;
+        width: 100%;
     }
 }
 
@@ -123,10 +122,5 @@ footer {
 
     body {
         background: white;
-    }
-
-    #wrapper {
-        box-shadow: none;
-        border: none;
     }
 }
