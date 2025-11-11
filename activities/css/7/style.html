@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
+</head>
+<body>
+  <main>
+    <form action="formprocess.html" method="post">
+      <div class="form-row">
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+      </div>
+
+      <div class="form-row">
+        <label for="state">State:</label>
+        <select name="state" id="state">
+          <option value="CA">California</option>
+          <option value="HI" selected>Hawaii</option>
+          <option value="UT">Utah</option>
+        </select>
+      </div>
+
+      <div class="check-row">
+        <input type="checkbox" id="check" name="check">
+        <label for="check">I agree to the terms</label>
+      </div>
+
+      <div class="form-row">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+      </div>
+
+      <div class="form-row">
+        <label for="comment">Comments:</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+    </form>
+    <p>1.You can style a form using CSS by changing fonts, colors, spacing, borders, and layout with tools like Flexbox or Grid.</p>
+    <p>2.Flex helps make the form look good on both desktop and mobile by automatically adjusting and stacking elements to fit different screen sizes.</p>
+  </main>
+</body>
+</html>
