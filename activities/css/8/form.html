@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
 
+<header>
+  <h1>My Sign Up Sheet Form</h1>
+</header>
+
+<main>
+  <form action="processing.html" method="get" id="myForm">
+    <fieldset>
+      <legend>Sign Up</legend>
+
+      <div class="form-row">
+        <label for="firstNameInput">First Name:</label>
+        <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
+      </div>
+
+      <div class="form-row">
+        <label for="emailInput">Email:</label>
+        <input type="email" name="email" id="emailInput">
+      </div>
+
+      <div class="form-row">
+        <label for="dateInput">Birth date:</label>
+        <input type="date" name="birthdate" id="dateInput">
+      </div>
+
+      <div class="form-row">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+      </div>
+
+      <div class="check-row">
+        <div class="spacer">Gender:</div>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female" checked> Female</label>
+      </div>
+
+      <div class="check-row">
+        <div class="spacer"></div>
+        <label>
+          <input type="checkbox" name="agree" value="on" checked>
+          I agree to the terms.
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label for="state">State:</label>
+        <select name="state" id="state">
+          <option value="ca">California</option>
+          <option value="hi" selected>Hawaii</option>
+          <option value="ut">Utah</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label class="spacer"></label>
+        <input type="submit" value="Sign Up!">
+      </div>
+
+    </fieldset>
+  </form>
+
+  <p>1. JavaScript is a computer language created in the goal of being able to modify the HTML inside the browser. It holds this game because the people that created java wanted people to know that they are also the ones behind this language. (microsoft)
+</p>
+<p>2. First we can modify the JavaScript directly on the browser. In the DOM (in a web browser/html page). and we can also use Node.js.
+</p>
+<p>3.The most popular front-end library back then was jQuery.</p>
+<p>4. The most popular front-end library now is React</p>
+</main>
+
+<footer>
+  <p>&copy;2025 Tu'iterai Tunutu</p>
+</footer>
+
+<script>
+    document.getElementById("myForm").addEventListener('submit',function(event) {
+        event.preventDefault();
+        alert("Form Submitted")
+    });
+</script>
+
+</body>
+</html>
