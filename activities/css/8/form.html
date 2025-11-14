@@ -22,17 +22,17 @@
         <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
       </div>
 
-      <div class="form-row">
+      <div class="form-row" id="email">
         <label for="emailInput">Email:</label>
         <input type="email" name="email" id="email">
       </div>
 
-      <div class="form-row">
+      <div class="form-row" id="birthdate">
         <label for="dateInput">Birth date:</label>
-        <input type="date" name="birthdate" id="dateInput">
+        <input type="date" name="birthdate" id="birthdate">
       </div>
 
-      <div class="form-row">
+      <div class="form-row" id="pass">
         <label for="password">Password:</label>
         <input type="password" name="password" id="pass">
       </div>
@@ -95,6 +95,9 @@
     const email = document.getElementById('email').value;
     const password = document.getElementById('pass').value;
     const age = document.getElementById('age').value;
+    const birthdate = document.getElementById('birthdate').value;
+    const gender = document.getElementById('gender').value;
+    const state = document.getElementById('state').value;
 
     if (!fullname || !email) {
         alert("You need a name and email.")
@@ -107,11 +110,24 @@
 
     }
 
+    if (!birthdate || !gender) {
+        alert("You need to fill in the birthdate and the gender.");
+        return;
+    }
+
+    if (!State) {
+        alert("You need to chose a State.");
+        return;
+    }
+
     const formData = {
         name: fullname,
         email: email,
         password: password,
-        age: age
+        age: age,
+        state : state,
+        gender: gender,
+        birthdate: birthdate
     };
 
     console.log(formData);
