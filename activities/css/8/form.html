@@ -91,31 +91,27 @@
         alert("Form Submitted")
     
 
-    const fullname = document.getElementById('fullname').value;
+    const fullname = document.getElementById('firstNameInput').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('pass').value;
     const age = document.getElementById('age').value;
     const birthdate = document.getElementById('birthdate').value;
-    const gender = document.getElementById('gender').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
     const state = document.getElementById('state').value;
 
-    if (!fullname || !email) {
+    if (!firstName || !email) {
         alert("You need a name and email.")
 
     }
 
-    if (!age || age<18) {
+    if (!birthdate || !gender) {
         alert("You need to be 18.");
         return;
 
     }
 
-    if (!birthdate || !gender) {
-        alert("You need to fill in the birthdate and the gender.");
-        return;
-    }
 
-    if (!State) {
+    if (!state) {
         alert("You need to chose a State.");
         return;
     }
@@ -124,9 +120,8 @@
         name: fullname,
         email: email,
         password: password,
-        age: age,
         state : state,
-        gender: gender,
+        gender: gender ? gender.value : '',
         birthdate: birthdate
     };
 
