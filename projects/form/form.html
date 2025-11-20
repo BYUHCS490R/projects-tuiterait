@@ -13,56 +13,54 @@
 </header>
 
 <main>
-  <form action="processing.html" method="post">
+  <form id="myForm">
     <fieldset>
       <legend>Sign Up</legend>
 
       <div class="form-row">
         <label for="firstNameInput">First Name:</label>
-        <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
+        <input type="text" id="firstNameInput" name="firstName">
       </div>
 
       <div class="form-row">
         <label for="emailInput">Email:</label>
-        <input type="email" name="email" id="emailInput">
+        <input type="email" id="emailInput" name="email">
       </div>
 
       <div class="form-row">
-        <label for="dateInput">Birth date:</label>
-        <input type="date" name="birthdate" id="dateInput">
+        <label for="birthdateInput">Birthdate:</label>
+        <input type="date" id="birthdateInput" name="birthdate">
       </div>
 
       <div class="form-row">
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password">
+        <label for="ageInput">Age:</label>
+        <input type="number" id="ageInput" name="age" min="1" max="120">
+      </div>
+
+      <div class="form-row">
+        <label for="passInput">Password:</label>
+        <input type="password" id="passInput" name="password">
       </div>
 
       <div class="check-row">
         <div class="spacer">Gender:</div>
         <label><input type="radio" name="gender" value="male"> Male</label>
-        <label><input type="radio" name="gender" value="female" checked> Female</label>
-      </div>
-
-      <div class="check-row">
-        <div class="spacer"></div>
-        <label>
-          <input type="checkbox" name="agree" value="on" checked>
-          I agree to the terms.
-        </label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
       </div>
 
       <div class="form-row">
         <label for="state">State:</label>
-        <select name="state" id="state">
+        <select id="state" name="state">
+          <option value="">Choose one...</option>
+          <option value="hi">Hawaii</option>
           <option value="ca">California</option>
-          <option value="hi" selected>Hawaii</option>
           <option value="ut">Utah</option>
         </select>
       </div>
 
       <div class="form-row">
         <label for="comment">Comment:</label>
-        <textarea name="comment" id="comment"></textarea>
+        <textarea id="comment" name="comment"></textarea>
       </div>
 
       <div class="form-row">
@@ -72,11 +70,14 @@
 
     </fieldset>
   </form>
+
+  <p id="message"></p>
 </main>
 
 <footer>
   <p>&copy;2025 Tu'iterai Tunutu</p>
 </footer>
 
+<script src="form.js"></script>
 </body>
 </html>
