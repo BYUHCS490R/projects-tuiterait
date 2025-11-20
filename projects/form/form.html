@@ -1,97 +1,83 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #eee;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
 
-header {
-  background-color: #ff0000;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-}
+<header>
+  <h1>My Sign Up Sheet Form</h1>
+</header>
 
-footer {
-  background-color: #ff0000;
-  color: #ffffff;
-  text-align: center;
-  padding: 8px;
-  font-size: 0.9em;
-}
+<main>
+  <form id="myForm">
+    <fieldset>
+      <legend>Sign Up</legend>
 
-main {
-  max-width: 600px;
-  margin: 20px auto;
-}
+      <div class="form-row">
+        <label for="firstNameInput">First Name:</label>
+        <input type="text" id="firstNameInput" name="firstName">
+      </div>
 
-fieldset {
-  border: 1px solid #000000;
-  padding: 15px;
-}
+      <div class="form-row">
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" name="email">
+      </div>
 
-legend {
-  font-weight: bold;
-}
+      <div class="form-row">
+        <label for="birthdateInput">Birthdate:</label>
+        <input type="date" id="birthdateInput" name="birthdate">
+      </div>
 
-.form-row,
-.check-row {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
+      <div class="form-row">
+        <label for="ageInput">Age:</label>
+        <input type="number" id="ageInput" name="age" min="1" max="120">
+      </div>
 
-.form-row label {
-  width: 30%;
-  text-align: right;
-  margin-right: 10px;
-}
+      <div class="form-row">
+        <label for="passInput">Password:</label>
+        <input type="password" id="passInput" name="password">
+      </div>
 
-.spacer {
-  width: 30%;
-  text-align: right;
-  margin-right: 10px;
-}
+      <div class="check-row">
+        <div class="spacer">Gender:</div>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
 
-input:not([type="submit"]),
-select,
-textarea {
-  padding: 10px;
-  font-size: 1em;
-  border-radius: 3px;
-  border: 1px solid #555;
-  background-color: #d4f852;
-  box-sizing: border-box;
-}
+      <div class="form-row">
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option value="">Choose one...</option>
+          <option value="hi">Hawaii</option>
+          <option value="ca">California</option>
+          <option value="ut">Utah</option>
+        </select>
+      </div>
 
-.check-row label {
-  margin-right: 10px;
-}
+      <div class="form-row">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
+      </div>
 
-input[type="submit"] {
-  padding: 10px 20px;
-  background-color: rgb(255, 4, 0);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+      <div class="form-row">
+        <label class="spacer"></label>
+        <input type="submit" value="Sign Up!">
+      </div>
 
-@media (max-width: 600px) {
-  .form-row,
-  .check-row {
-    flex-direction: column;
-    align-items: stretch;
-  }
+    </fieldset>
+  </form>
 
-  .form-row label,
-  .spacer {
-    width: 100%;
-    text-align: left;
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+  <p id="message"></p>
+</main>
 
-  input[type="submit"] {
-    width: 100%;
-  }
-}
+<footer>
+  <p>&copy;2025 Tu'iterai Tunutu</p>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>
