@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title Here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Valorant Recruiting</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">Why Enlist</a>
+    <a href="benefits.html">Benefits</a>
+    <a href="requirements.html">Requirements</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="table.html">Agent Table</a>
+    <a href="enlist.html">Enlist</a>
+</nav>
+
+<main>
+    <main>
+    <h2>Enlist Now</h2>
+
+    <form id="enlistForm">
+        <label>Email: <input type="email" id="email"></label><br>
+        <label>Name: <input type="text" id="name"></label><br>
+        <label>Age: <input type="number" id="age"></label><br>
+        <label>Password: <input type="password" id="pass"></label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="msg" style="display:none;">Form submitted! Welcome recruit.</p>
+
+    <script>
+        document.getElementById("enlistForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            document.getElementById("enlistForm").style.display = "none";
+            document.getElementById("msg").style.display = "block";
+        });
+    </script>
+</main>
+
+</main>
+
+<footer>
+    <p>© 2024 Valorant Recruiting</p>
+</footer>
+
+</body>
+</html>
