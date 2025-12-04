@@ -20,33 +20,53 @@
     <a href="requirements.html">Requirements</a>
     <a href="testimonials.html">Testimonials</a>
     <a href="table.html">Agent Table</a>
-    <a href="enlist.html">Enlist</a>
+    <a class="current" href="enlist.html">Enlist</a>
 </nav>
 
 <main>
-    <main>
-    <h2>Enlist Now</h2>
+    <h2>Enlistment Form</h2>
+    <p>
+        If you have read the reasons, checked the benefits, and survived the requirements, then you are ready to enlist.
+        Please fill out the information below to create your official Valorant recruit profile.
+    </p>
 
-    <form id="enlistForm">
-        <label>Email: <input type="email" id="email"></label><br>
-        <label>Name: <input type="text" id="name"></label><br>
-        <label>Age: <input type="number" id="age"></label><br>
-        <label>Password: <input type="password" id="pass"></label><br>
+    <form>
+        <table>
+            <caption>Valorant Recruit Information</caption>
+            <tr>
+                <th>Field</th>
+                <th>Your Information</th>
+            </tr>
+            <tr>
+                <td><label for="name">Full Name</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" name="age" min="13" max="99" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="ssn">SSN</label></td>
+                <td><input type="text" id="ssn" name="ssn" required></td>
+            </tr>
+        </table>
 
-        <button type="submit">Submit</button>
+        <p class="tiny">
+            *Do not use a real password or real SSN on this website. This is a school project form only.
+        </p>
+
+        <p>
+            <button type="submit">Submit Enlistment</button>
+        </p>
     </form>
-
-    <p id="msg" style="display:none;">Form submitted! Welcome recruit.</p>
-
-    <script>
-        document.getElementById("enlistForm").addEventListener("submit", function(event){
-            event.preventDefault();
-            document.getElementById("enlistForm").style.display = "none";
-            document.getElementById("msg").style.display = "block";
-        });
-    </script>
-</main>
-
 </main>
 
 <footer>
